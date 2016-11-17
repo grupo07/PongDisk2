@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:padding="5dp"
+	android:orientation="vertical"
+	android:background="@android:color/background_dark">
+
+
+	<ImageView
+		android:id="@+id/title_banner"
+		android:layout_gravity="center_horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/pongdisk3"></ImageView>
+
+	<FrameLayout
+		android:id="@+id/title_buttonHolder"
+		android:layout_weight="1"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:id="@+id/title_buttonList"
+			android:layout_gravity="center_horizontal|center_vertical"
+			android:layout_width="wrap_content"
+			android:orientation="vertical"
+			android:layout_height="wrap_content">
+
+			<Button
+				android:text="@string/one_player"
+				android:id="@+id/title_btnOnePlayer"
+				android:width="220dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/uno4"
+				android:textStyle="normal|bold"
+				android:textColor="@android:color/background_light"></Button>
+
+			<Button
+				android:text="@string/two_players"
+				android:id="@+id/title_btnTwoPlayer"
+				android:width="220dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/icon"
+				android:textStyle="normal|bold"
+				android:textColor="@android:color/background_light"></Button>
+						
+			<Button
+				android:text="@string/no_players"
+				android:id="@+id/title_btnNoPlayer"
+				android:width="220dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textStyle="normal|bold"
+				android:background="@drawable/no2"
+				android:textColor="@android:color/background_light"></Button>
+		</LinearLayout>
+	</FrameLayout>
+
+
+</LinearLayout>
